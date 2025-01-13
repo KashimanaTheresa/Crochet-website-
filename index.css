@@ -1,90 +1,83 @@
+#my-container{
+    width: 100%;
+    padding: 20px 12%;
+    height: fit-content;
+    margin: 5% auto;
+}
+
 @font-face {
-    font-family: "my font";
-    src: url('.Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
+    font-family: "My Font";
+    src: url('./Montserrat/static/Montserrat-Regular.ttf');
 }
 
-*{
-    font-family: 'my font', Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
-    
+* {
+    font-family:  'My Font', 'Times New Roman', Times, serif;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
+.navbar-nav .nav-item {
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+   align-items: center;
+   top: 0px;
+   right: 0px;
+
 }
 
-#navlinks{
-    display: flex;
-    justify-content: center;
-}
-
-#navlinks li{
-    list-style: none;
+.nav-item .nav-link {
+    color: blue;
+    justify-content: flex-end;
     margin: auto 10px;
-   justify-content: space-between;
     
-
 }
 
-a{
-    text-decoration: none;
-}
-
-#head{
+#master{
     background-image: url(img/karen-penroz-0TvE4CQ33_I-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
-    min-width: 200vh;
-    font-weight: bold;
+    min-width: 800px;
+    min-height: 500px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    line-height: 30px;
+    font-weight: bold;
 
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.every{
+    display: flex;
+   gap: 30px;
+   justify-content: center;
+   margin-top: 50px;
+}
+
+
+.card{
+    padding: 15px;
+}
+h3{
+    text-align: center;
 }
 
 img{
-    height: 250px;
+    height: 200px;
     width: 300px;
 }
 p{
-    text-align: start;
-    display: flex;
-    position: relative;
-    padding: 4px;
-    font-size: 16px;
+    letter-spacing: 2px;
     line-height: 30px;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-
 }
 
-#items{
-    margin-top: 20px;
+footer{
+    justify-content: center;
+    gap: 1px;
     display: flex;
-    
-    
 }
-
-#item1, #item2, #item3{
-    background-color: snow;
-    margin: 20px;
-    padding: 50px;
-    border-radius: 20px;
-}
-
-
-button{
-    padding: 5px;
-    background-color: whitesmoke;
-    border-radius: 5px;
-    color: black;
-}
-  
