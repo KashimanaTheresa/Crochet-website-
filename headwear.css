@@ -1,0 +1,61 @@
+#my-container{
+    width: 100%;
+    padding: 20px 12%;
+    height: fit-content;
+    margin: 3% auto;
+}
+
+@font-face {
+    font-family: "My Font";
+    src: url('./Montserrat/static/Montserrat-Regular.ttf');
+}
+
+* {
+    font-family:  'My Font', 'Times New Roman', Times, serif;
+}
+
+.navbar-nav .nav-item {
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+   align-items: center;
+   top: 0px;
+   right: 0px;
+
+}
+
+.nav-item .nav-link {
+    color: blue;
+    justify-content: flex-end;
+    margin: auto 10px;
+}    
+
+#container{
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    justify-content: center;
+    
+}
+
+
+
+
+
+footer{
+    justify-content: center;
+    gap: 1px;
+    display: flex;
+}

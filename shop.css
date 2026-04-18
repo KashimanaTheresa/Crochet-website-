@@ -72,13 +72,17 @@ body {
     margin: 3% auto;
 }
 
-#mast{
-    background-image: url(img/karen-penroz-0TvE4CQ33_I-unsplash.jpg);
+h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#master{
+    background-image: url(img/49d826447cf83fdec134b6f05af6bd45.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     height: 400px;
-    width: 1000px;
+    width: 100%;
     font-weight: bold;
     font-size: 1rem;
     padding: 20px;
@@ -88,36 +92,14 @@ body {
     justify-content: center;
     line-height: 30px;
     margin-bottom: 30px;
-    border-radius: 30px;
+    border-radius: 100px 0 100px 0;
+    text-align: center;
+   
 }
 
-
-h2{
-    justify-content: end;
+h3{
+    padding: 20px;
 }
-
-img{
-    width: 300px;
-    border-radius: 150px;
-}
-
-p{
-    line-height: 30px;
-  
-    
-}
-
-
-#container{
-
-   margin-top: 50px;
-    
-}
-
-.row{
-    margin-bottom: 20px;
-}
-
 footer{
     justify-content: center;
     gap: 1px;
