@@ -181,3 +181,44 @@ footer{
         font-size: 2rem;
     }
 }
+
+/* SEARCH STYLING */
+#productList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.product-item {
+    padding: 12px 15px;
+    margin: 8px 0;
+    background-color: white;
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.product-item:hover {
+    background-color: var(--light-bg);
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(139, 71, 137, 0.15);
+}
+
+.product-item mark {
+    background-color: #FFD700;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+#noResults {
+    text-align: center;
+    color: #999;
+    padding: 30px 20px;
+    font-size: 1.1rem;
+    font-style: italic;
+}
