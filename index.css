@@ -67,7 +67,7 @@ body {
 /* CONTAINER */
 #my-container {
     width: 100%;
-    padding: 30px 12%;
+    padding: 30px 5%;
     height: fit-content;
     margin: 3% auto;
 }
@@ -78,37 +78,37 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-width: 800px;
-    min-height: 550px;
-    padding: 60px 40px;
+    min-height: 350px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 35px;
+    line-height: 1.5;
     font-weight: 500;
-    font-size: 1.1rem;
-    border-radius: 20px;
+    font-size: 1rem;
+    border-radius: 15px;
     color: white;
     box-shadow: 0 10px 40px rgba(139, 71, 137, 0.3);
     text-align: center;
     animation: fadeIn 0.8s ease-in;
+    width: 100%;
 }
 
 #master h2 {
-    font-size: 3.5rem;
-    margin-bottom: 25px;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
     font-weight: 900;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 #master p {
-    font-size: 1.2rem;
-    max-width: 700px;
+    font-size: 1rem;
+    max-width: 100%;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 0.5px;
-    line-height: 35px;
+    line-height: 1.6;
 }
 
 /* HEADINGS */
@@ -149,9 +149,9 @@ h3:hover i {
 .every {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 50px;
     align-items: flex-start;
 }
 
@@ -160,23 +160,25 @@ h3:hover i {
 }
 
 .every .card:nth-child(2) {
-    transform: translateY(40px);
+    transform: translateY(0px);
 }
 
 .every .card:nth-child(3) {
-    transform: translateY(80px);
+    transform: translateY(0px);
 }
 
 /* CARD STYLING */
 .card {
-    padding: 20px;
-    border-radius: 0px 150px 0px 150px;
+    padding: 15px;
+    border-radius: 0px 100px 0px 100px;
     border: none;
     background: white;
     box-shadow: 0 8px 24px rgba(139, 71, 137, 0.15);
     transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
     position: relative;
     overflow: hidden;
+    width: 100%;
+    max-width: 280px;
 }
 
 .card::before {
@@ -197,15 +199,15 @@ h3:hover i {
 }
 
 .card:hover {
-    transform: translateY(-12px);
+    transform: translateY(-8px);
     box-shadow: 0 16px 40px rgba(139, 71, 137, 0.25);
 }
 
 .card img {
-    height: 200px;
+    height: 180px;
     width: 100%;
     object-fit: cover;
-    border-radius: 0px 20px 0px 20px;
+    border-radius: 0px 15px 0px 15px;
     transition: transform 0.4s ease;
 }
 
@@ -214,14 +216,14 @@ h3:hover i {
 }
 
 .card-body {
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .card-text {
     color: #555;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     letter-spacing: 0.5px;
-    line-height: 28px;
+    line-height: 25px;
 }
 
 /* IMAGE STYLING */
@@ -339,36 +341,186 @@ footer i.fa-twitter-square:hover {
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
+/* Mobile - Extra Small (320px - 480px) */
+@media (max-width: 480px) {
+    #my-container {
+        padding: 15px 3%;
+        margin: 5% auto;
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem;
+    }
+
+    .nav-item .nav-link {
+        margin: 0 8px !important;
+        font-size: 0.9rem;
+    }
+
+    #master {
+        min-height: 280px;
+        padding: 25px 15px;
+        border-radius: 10px;
+    }
+
+    #master h2 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    #master p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .every {
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .card {
+        max-width: 100%;
+        padding: 12px;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+
+    footer i {
+        margin: 0 8px;
+        font-size: 24px;
+    }
+
+    footer a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile - Small (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
     #my-container {
         padding: 20px 5%;
+        margin: 3% auto;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-item .nav-link {
+        margin: 0 10px !important;
+        font-size: 0.95rem;
+    }
+
+    #master {
+        min-height: 350px;
+        padding: 35px 20px;
+        border-radius: 12px;
+    }
+
+    #master h2 {
+        font-size: 2rem;
+        letter-spacing: 1.5px;
+    }
+
+    #master p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .every {
+        gap: 18px;
+        margin-top: 40px;
+    }
+
+    .card {
+        max-width: 250px;
+        padding: 14px;
+    }
+
+    .card img {
+        height: 170px;
+    }
+
+    footer i {
+        margin: 0 10px;
+        font-size: 28px;
+    }
+}
+
+/* Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #my-container {
+        padding: 25px 8%;
     }
 
     #master {
         min-height: 400px;
-        padding: 40px 20px;
+        padding: 45px 30px;
     }
 
     #master h2 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 
     #master p {
-        font-size: 1rem;
+        font-size: 1.05rem;
     }
 
     .every {
-        gap: 20px;
-    }
-
-    .every .card:nth-child(1),
-    .every .card:nth-child(2),
-    .every .card:nth-child(3) {
-        transform: translateY(0px);
+        gap: 25px;
     }
 
     .card {
-        width: 100% !important;
+        max-width: 280px;
+    }
+
+    .card img {
+        height: 190px;
+    }
+}
+
+/* Desktop - Large (1025px+) */
+@media (min-width: 1025px) {
+    #my-container {
+        padding: 30px 12%;
+    }
+
+    #master {
+        min-height: 450px;
+        padding: 50px 40px;
+    }
+
+    #master h2 {
+        font-size: 3rem;
+    }
+
+    #master p {
+        font-size: 1.1rem;
+    }
+
+    .every {
+        gap: 30px;
+    }
+
+    .card {
         max-width: 300px;
+    }
+
+    .card img {
+        height: 200px;
     }
 }

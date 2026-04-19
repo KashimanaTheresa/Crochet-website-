@@ -67,34 +67,95 @@ body {
 /* CONTAINER */
 #my-container {
     width: 100%;
-    padding: 30px 12%;
+    padding: 30px 5%;
     height: fit-content;
     margin: 3% auto;
 }
 
-
 h2{
     text-align: center;
+    font-size: 1.6rem;
 }
 
 #container{
     background-image: url(img/ae99496533f03f52c197d72113879f8b[1].jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    line-height: 30px;
-    height: 300px;
-    width: 1000px;
+    background-position: center;
+    line-height: 1.5;
+    min-height: 300px;
+    width: 100%;
     margin-top: 30px;
     margin-bottom: 20px;
-    padding-top: 30px;
+    padding: 25px 15px;
     justify-content: center;
     text-align: center;
-
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
 }
-
 
 footer{
     justify-content: center;
     gap: 1px;
     display: flex;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 480px) {
+    #my-container {
+        padding: 15px 3%;
+    }
+
+    #container {
+        min-height: 250px;
+        padding: 20px 12px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #my-container {
+        padding: 20px 5%;
+    }
+
+    #container {
+        min-height: 300px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #my-container {
+        padding: 25px 8%;
+    }
+
+    #container {
+        min-height: 350px;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    #my-container {
+        padding: 30px 12%;
+    }
+
+    #container {
+        min-height: 400px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
 }

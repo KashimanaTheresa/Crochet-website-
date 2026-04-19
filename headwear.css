@@ -1,10 +1,3 @@
-#my-container{
-    width: 100%;
-    padding: 20px 12%;
-    height: fit-content;
-    margin: 3% auto;
-}
-
 @font-face {
     font-family: "My Font";
     src: url('./Montserrat/static/Montserrat-Regular.ttf');
@@ -12,6 +5,16 @@
 
 * {
     font-family:  'My Font', 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#my-container{
+    width: 100%;
+    padding: 20px 5%;
+    height: fit-content;
+    margin: 3% auto;
 }
 
 .navbar-nav .nav-item {
@@ -21,14 +24,13 @@
    align-items: center;
    top: 0px;
    right: 0px;
-
 }
 
 .nav-item .nav-link {
     color: blue;
     justify-content: flex-end;
-    margin: auto 10px;
-}    
+    margin: auto 8px;
+}
 
 #container{
     justify-content: center;
@@ -38,24 +40,69 @@ h2{
     text-align: center;
     margin-top: 5px;
     margin-bottom: 10px;
+    font-size: 1.6rem;
 }
 
 #items{
     display: flex;
     flex-wrap: wrap;
-    gap: 200px;
+    gap: 25px;
     margin-top: 25px;
     margin-bottom: 10px;
     justify-content: center;
-    
 }
-
-
-
-
 
 footer{
     justify-content: center;
     gap: 1px;
     display: flex;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 480px) {
+    #my-container {
+        padding: 15px 3%;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    #items {
+        gap: 15px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #my-container {
+        padding: 20px 5%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #items {
+        gap: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #my-container {
+        padding: 25px 8%;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    #my-container {
+        padding: 30px 12%;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
 }
