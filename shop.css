@@ -79,7 +79,7 @@ h2{
 }
 
 #master{
-    background-image: url(img/49d826447cf83fdec134b6f05af6bd45.jpg);
+    background: linear-gradient(135deg, #ffffff 0%, #F5F1F7 25%, #D4A5D4 75%, #8B4789 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
