@@ -241,7 +241,6 @@ p {
 footer {
     background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);
     color: white;
-    padding: 40px;
     margin-top: 10px;
     text-align: center;
     box-shadow: 0 -4px 12px rgba(139, 71, 137, 0.2);
