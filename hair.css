@@ -1,13 +1,67 @@
-@font-face {
-    font-family: "My Font";
-    src: url('./Montserrat/static/Montserrat-Regular.ttf');
+:root {
+    --primary-color: #8B4789;
+    --secondary-color: #D4A5D4;
+    --light-bg: #F5F1F7;
 }
 
 * {
-    font-family:  'My Font', 'Times New Roman', Times, serif;
+    font-family: 'My Font', 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-bg);
+    line-height: 1.6;
+}
+
+/* NAVBAR STYLING */
+.navbar {
+    background: linear-gradient(135deg, var(#fff) 0%, var(--accent-color) 100%) !important;
+    box-shadow: 0 4px 12px rgba(139, 71, 137, 0.2);
+    padding: 1rem 0 !important;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black !important;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.nav-item .nav-link {
+    color: black !important;
+    font-weight: 500;
+    margin: 0 15px !important;
+    position: relative;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-item .nav-link:hover::after,
+.nav-item .nav-link.active::after {
+    width: 100%;
+}
+
+.nav-item .nav-link:hover {
+    transform: translateY(-2px);
 }
 
 #my-container{

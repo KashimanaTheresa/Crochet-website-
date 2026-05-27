@@ -101,10 +101,89 @@ h3{
     padding: 15px 10px;
     font-size: 1.3rem;
 }
-footer{
-    justify-content: center;
-    gap: 1px;
+/* FOOTER STYLING */
+footer {
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    box-shadow: 0 -4px 12px rgba(139, 71, 137, 0.2);
+}
+
+footer .row {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    color: black;
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+footer .col-12 {
+    width: 100%;
+}
+
+footer i {
+    margin: 0 12px;
+    font-size: 32px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+footer i:hover {
+    transform: scale(1.2) rotate(10deg);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+}
+
+footer i.fa-instagram:hover {
+    color: #E1306C;
+}
+
+footer i.fa-facebook-square:hover {
+    color: #1877F2;
+}
+
+footer i.fa-whatsapp:hover {
+    color: #25D366;
+}
+
+footer i.fa-twitter-square:hover {
+    color: #1DA1F2;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* RESPONSIVE DESIGN */
