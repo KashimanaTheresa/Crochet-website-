@@ -106,7 +106,7 @@ h2{
     font-size: 1.6rem;
 }
 
-#items{
+.items-grid{
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
@@ -114,6 +114,41 @@ h2{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.product-card{
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.product-card .card-img-top{
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-card .card-body{
+    text-align: left;
+}
+
+.product-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.btn-primary{
+    background: linear-gradient(90deg,#8B4789,#6b2f6b);
+    border: none;
+}
+
+.section-title{
+    color: var(--primary-color);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.size-chart{max-width:720px;border-radius:10px;box-shadow:0 8px 22px rgba(139,71,137,0.08);}
+
 /* FOOTER STYLING */
 footer {
     background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);

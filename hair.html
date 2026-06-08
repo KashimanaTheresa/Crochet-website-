@@ -1,170 +1,160 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bags & Hair Accessories</title>
     <link rel="stylesheet" href="hair.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-          <a class="navbar-brand ms-4" href="#">CBK</a>
+          <a class="navbar-brand ms-4 d-flex align-items-center" href="#">
+            <i class="fa fa-user-circle" style="font-size:28px;color:purple;"></i>
+            <span class="ms-2" id="profileName">Guest</span>
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">ABOUT OUR CRAFT</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="shop.html">PRODUCT GALLERY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="explore.html">EXPLORE MORE</a>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">ABOUT OUR CRAFT</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="shop.html">PRODUCT GALLERY</a></li>
+              <li class="nav-item"><a class="nav-link" href="explore.html">EXPLORE MORE</a></li>
             </ul>
           </div>
         </div>
       </nav>
-
       <div id="my-container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
+          <div class="container py-4">
+              <section id="size-chart" class="text-center mb-4">
+                  <h2 class="section-title">Size Chart</h2>
+                  <img src="img/a7be4b831261b88f722d2f9f5ec5ce4d.jpg" alt="size chart" class="img-fluid size-chart">
+              </section>
+              <section class="product-section">
+                  <div class="section-header d-flex justify-content-between align-items-center mb-3">
+                      <h2 class="section-title mb-0">Hair Accessories</h2>
+                      
+                  </div>
+                  <div class="items-grid row">
+                      <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                          <div class="card product-card">
+                              <img src="img/9c3c53f96a17503af7dbc4420bbf7e5e.jpg" class="card-img-top" alt="ruffle bow">
+                              <div class="card-body">
+                                <h5 class="card-title">Ruffle Bow</h5>
+                                <p class="card-text">Bow with ruffles<br><strong>Price: #1,500</strong></p>
+                                <a href="#" class="btn btn-primary btn-sm add-cart" data-id="401" data-title="Ruffle Bow" data-price="1500" data-img="img/9c3c53f96a17503af7dbc4420bbf7e5e.jpg">Add to cart</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                          <div class="card product-card">
+                              <img src="img/1000440648.jpg" class="card-img-top" alt="scrunchie">
+                              <div class="card-body">
+                                <h5 class="card-title">Scrunchie</h5>
+                                <p class="card-text">Soft elastic scrunchie<br><strong>Price: #2,000</strong></p>
+                                <a href="#" class="btn btn-primary btn-sm add-cart" data-id="402" data-title="Scrunchie" data-price="2000" data-img="img/1000440648.jpg">Add to cart</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                          <div class="card product-card">
+                              <img src="img/1000290665.jpg" class="card-img-top" alt="bow clip">
+                              <div class="card-body">
+                                <h5 class="card-title">Bow Clip</h5>
+                                <p class="card-text">Decorative bow<br><strong>Price: #1,500</strong></p>
+                                <a href="#" class="btn btn-primary btn-sm add-cart" data-id="403" data-title="Bow Clip" data-price="1500" data-img="img/1000290665.jpg">Add to cart</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+              <section class="product-section mt-5">
+                  <div class="section-header d-flex justify-content-between align-items-center mb-3">
+                      <h2 class="section-title mb-0">Bags</h2>
+                     
+                  </div>
+                  <div class="items-grid row">
+                      <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                          <div class="card product-card">
+                              <img src="img/f5607ebd99a1034c2a69e12348811a0a.jpg" class="card-img-top" alt="shoulder bag">
+                              <div class="card-body">
+                                <h5 class="card-title">Shoulder Bag</h5>
+                                <p class="card-text">Shoulder bag with ruffles<br><strong>Price: #10,000</strong></p>
+                                <a href="#" class="btn btn-primary btn-sm add-cart" data-id="404" data-title="Shoulder Bag" data-price="10000" data-img="img/f5607ebd99a1034c2a69e12348811a0a.jpg">Add to cart</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                          <div class="card product-card">
+                              <img src="img/b8dc5e593b5a5ceef34430a0edeeefa1.jpg" class="card-img-top" alt="star tote">
+                              <div class="card-body">
+                                <h5 class="card-title">Star Tote</h5>
+                                <p class="card-text">Star tote with mini bows<br><strong>Price: #12,000</strong></p>
+                                <a href="#" class="btn btn-primary btn-sm add-cart" data-id="405" data-title="Star Tote" data-price="12000" data-img="img/b8dc5e593b5a5ceef34430a0edeeefa1.jpg">Add to cart</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                          <div class="card product-card">
+                              <img src="img/63b9912f3c56f19f7f05479cdeaf326d.jpg" class="card-img-top" alt="hello kitty tote">
+                              <div class="card-body">
+                                <h5 class="card-title">Hello Kitty Tote</h5>
+                                <p class="card-text">Cute Hello Kitty tote<br><strong>Price: #12,000</strong></p>
+                                <a href="#" class="btn btn-primary btn-sm add-cart" data-id="406" data-title="Hello Kitty Tote" data-price="12000" data-img="img/63b9912f3c56f19f7f05479cdeaf326d.jpg">Add to cart</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                          <div class="card product-card">
+                              <img src="img/597f92517ce568df1711787354b6efc7[1].jpg" class="card-img-top" alt="flora tote">
+                              <div class="card-body">
+                                <h5 class="card-title">Flora Tote</h5>
+                                <p class="card-text">Flora tote<br><strong>Price: #12,000</strong></p>
+                                <a href="#" class="btn btn-primary btn-sm add-cart" data-id="407" data-title="Flora Tote" data-price="12000" data-img="img/597f92517ce568df1711787354b6efc7[1].jpg">Add to cart</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                          <div class="card product-card">
+                              <img src="img/1321e2af0e6c3b7a41c6819d35425ce8.jpg" class="card-img-top" alt="short handle bag">
+                              <div class="card-body">
+                                <h5 class="card-title">Short Handle Bag</h5>
+                                <p class="card-text">Short-hand bag<br><strong>Price: #7,000</strong></p>
+                                <a href="#" class="btn btn-primary btn-sm add-cart" data-id="408" data-title="Short Handle Bag" data-price="7000" data-img="img/1321e2af0e6c3b7a41c6819d35425ce8.jpg">Add to cart</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                          <div class="card product-card">
+                              <img src="img/07497802b3129d81b9e2ba181aa480d9.jpg" class="card-img-top" alt="butterfly tote">
+                              <div class="card-body">
+                                <h5 class="card-title">Butterfly Tote</h5>
+                                <p class="card-text">Butterfly tote<br><strong>Price: #12,000</strong></p>
+                                <a href="#" class="btn btn-primary btn-sm add-cart" data-id="409" data-title="Butterfly Tote" data-price="12000" data-img="img/07497802b3129d81b9e2ba181aa480d9.jpg">Add to cart</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+          </div>
+      </div>
+      <footer>
+        <div class="row">
+            <div class="col-12"><p><a href="hair.html">BACK TO TOP</a></p><br></div>
+            <div class="col-12">
+                <i class="fa fa-instagram" style="font-size:36px;color: blueviolet;"></i>
+               <i class="fa fa-facebook-square" style="font-size:36px;color: blue;"></i>
+               <i class="fa fa-whatsapp" style="font-size:36px;color: green;"></i>
+               <i class="fa fa-twitter-square" style="font-size:36px;color: aqua;"></i>
             </div>
-         </nav>  
-         
-         <div id="master"><h1 >BAGS $ HAIR ACCESSORIES</h1></div>
-
-         <h2>HAIR ACCESSORIES</h2>
-
-           <div id="items">
-
-            
-            <div class="card" style="width: 18rem;">
-                <img src="img/9c3c53f96a17503af7dbc4420bbf7e5e.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">HAIR ACCESSORIES</h5>
-                  <p class="card-text">DESCRITOM:Bow with ruffles <br>PRICE:#1500</p>
-                  <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="img/1000440648.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">HAIR ACCESSORIES</h5>
-                  <p class="card-text">DESCRITOM:scrunchie <br>PRICE:#2000</p>
-                  <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="img/1000290665.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">HAIR ACCESSORIES</h5>
-                  <p class="card-text">DESCRITOM:Bow <br>PRICE:#1500</p>
-                  <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-              </div>
-            
-           </div>
-
-           <h2>BAGS</h2>
-              <div id="items">
-
-                <div class="card" style="width: 18rem;">
-                  <img src="img/f5607ebd99a1034c2a69e12348811a0a.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">BAGS</h5>
-                    <p class="card-text">DESCRITOM:Shoulder bag with ruffles <br>PRICE:#10,000</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                  </div>
-                </div>
-  
-                <div class="card" style="width: 18rem;">
-                  <img src="img/b8dc5e593b5a5ceef34430a0edeeefa1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">BAGS</h5>
-                    <p class="card-text">DESCRITOM:star tote with mini bows <br>PRICE:#12,000</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                  </div>
-                </div>
-  
-                <div class="card" style="width: 18rem;">
-                  <img src="img/63b9912f3c56f19f7f05479cdeaf326d.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">BAGS</h5>
-                    <p class="card-text">DESCRITOM:Hello kitty tote<br>PRICE:#12,000</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                  </div>
-                </div>
-  
-                <div class="card" style="width: 18rem;">
-                  <img src="img/597f92517ce568df1711787354b6efc7[1].jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">BAGS</h5>
-                    <p class="card-text">DESCRITOM:Flora tote <br>PRICE:#12,000</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                  </div>
-                </div>
-  
-                <div class="card" style="width: 18rem;">
-                  <img src="img/1321e2af0e6c3b7a41c6819d35425ce8.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">BAGS</h5>
-                    <p class="card-text">DESCRITOM:Shoulder bag with short hand <br>PRICE:#7,000</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                  </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                  <img src="img/07497802b3129d81b9e2ba181aa480d9.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">BAGS</h5>
-                    <p class="card-text">DESCRITOM:Butterfly tote <br>PRICE:#12,000</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                  </div>
-                </div>
-  
-
-              </div>
-
-
-           <footer>
-            <div class="row">
-                <div class="col-12">
-                    <p><a href="hair.html">BACK TO TOP</a></p><br>
-                </div>
-                <div class="col-12">
-                    <i class="fa fa-instagram" style="font-size:36px;color: blueviolet;"></i>
-                   <i class="fa fa-facebook-square" style="font-size:36px;color: blue;"></i>
-                   <i class="fa fa-whatsapp" style="font-size:36px;color: green;"></i>
-                   <i class="fa fa-twitter-square" style="font-size:36px;color: aqua;"></i>
-                </div>
-            </div>
-    
-        </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-
+        </div>
+    </footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ <script src="profile.js"></script>
 </body>
 </html>

@@ -12,7 +12,10 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-          <a class="navbar-brand ms-4" href="#">CBK</a>
+          <a class="navbar-brand ms-4 d-flex align-items-center" href="#">
+            <i class="fa fa-user-circle" style="font-size:28px;color:purple;"></i>
+            <span class="ms-2" id="profileName">Guest</span>
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -37,113 +40,110 @@
       </nav>
 
       <div id="my-container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">CBK</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-         </nav>    
+          <div class="container py-4">
+              <section id="size-chart" class="text-center mb-4">
+                  <h2 class="section-title">Size Chart</h2>
+                  <img src="img/a7be4b831261b88f722d2f9f5ec5ce4d.jpg" alt="size chart" class="img-fluid size-chart">
+              </section>
 
-            <div id="container">
-                <h2>size chart</h2>
-                <img src="img/a7be4b831261b88f722d2f9f5ec5ce4d.jpg" alt="size cart">
-           </div>
+              <section class="product-section">
+                  <div class="section-header d-flex justify-content-between align-items-center mb-3">
+                      <h2 class="section-title mb-0">Shrugs</h2>
+                      
+                  </div>
 
-           <h2>SRUGS</h2>
+                  <div class="items-grid row">
+                      <div class="col-sm-6 col-md-4 col-lg-3">
+                          <div class="card product-card">
+                              <img src="img/f2fd45f943b312deaa1697fd94fe6a9a[1].jpg" class="card-img-top" alt="shrug1">
+                              <div class="card-body">
+                                <h5 class="card-title">Crop Shrug</h5>
+                                <p class="card-text">Crop shrug with bell sleeve<br><strong>Price: #10,000</strong></p>
+                                <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
+                              </div>
+                            </div>
+                      </div>
 
-           <div id="items">
-            <div class="card" style="width: 18rem;">
-                <img src="img/f2fd45f943b312deaa1697fd94fe6a9a[1].jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">SRUGS</h5>
-                  <p class="card-text">Description:Crop shrug with bell sleeve <br>Price:#10,000</p>
-                  <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-              </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3">
+                          <div class="card product-card">
+                            <img src="img/32e5e498789df6067d2c8a5c93fff62b[1].jpg" class="card-img-top" alt="shrug2">
+                            <div class="card-body">
+                              <h5 class="card-title">Bell Sleeve Shrug</h5>
+                              <p class="card-text">Shrug with bell sleeves<br><strong>Price: #12,000</strong></p>
+                              <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
+                            </div>
+                          </div>
+                      </div>
 
-              <div class="card" style="width: 18rem;">
-                <img src="img/32e5e498789df6067d2c8a5c93fff62b[1].jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">SRUGS</h5>
-                  <p class="card-text">DESCRITOM:shruh with bell sleeves <br>PRICE:12,000</p>
-                  <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-              </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3">
+                          <div class="card product-card">
+                            <img src="img/89ebb9ee2e869bda5a453eef5456c3ae.jpg" class="card-img-top" alt="shrug3">
+                            <div class="card-body">
+                              <h5 class="card-title">Roundneck Shrug</h5>
+                              <p class="card-text">Roundneck design<br><strong>Price: #15,000</strong></p>
+                              <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
+                            </div>
+                          </div>
+                      </div>
 
-              <div class="card" style="width: 18rem;">
-                <img src="img/89ebb9ee2e869bda5a453eef5456c3ae.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">SRUGS</h5>
-                  <p class="card-text">DESCRITOM:Roundneck shrug <br>PRICE:#15,000</p>
-                  <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-              </div>
+                  </div>
+              </section>
 
-           </div>
+              <section class="product-section mt-5">
+                  <div class="section-header d-flex justify-content-between align-items-center mb-3">
+                      <h2 class="section-title mb-0">Summer Tops</h2>
+                      
+                  </div>
 
-           <h2>SUMMER TOPS</h2>
-           <div id="items">
+                  <div class="items-grid row">
+                      <div class="col-sm-6 col-md-4 col-lg-3">
+                          <div class="card product-card">
+                            <img src="img/b331e40c8aa36f50732b95a88eb8dab8.jpg" class="card-img-top" alt="top1">
+                            <div class="card-body">
+                              <h5 class="card-title">Summer Top</h5>
+                              <p class="card-text">Lightweight knit<br><strong>Price: #7,000</strong></p>
+                              <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
+                            </div>
+                          </div>
+                      </div>
 
-            <div class="card" style="width: 18rem;">
-                <img src="img/b331e40c8aa36f50732b95a88eb8dab8.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">SUMMER TOPS</h5>
-                  <p class="card-text">DESCRITOM:shruh with bell sleeves <br>PRICE:7,000</p>
-                  <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-              </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3">
+                          <div class="card product-card">
+                            <img src="img/a632cb6c634f71fc06c28c4526e5966f.jpg" class="card-img-top" alt="top2">
+                            <div class="card-body">
+                              <h5 class="card-title">Summer Top</h5>
+                              <p class="card-text">Relaxed fit<br><strong>Price: #7,000</strong></p>
+                              <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
+                            </div>
+                          </div>
+                      </div>
 
+                      <div class="col-sm-6 col-md-4 col-lg-3">
+                          <div class="card product-card">
+                            <img src="img/1000274843.jpg" class="card-img-top" alt="top3">
+                            <div class="card-body">
+                              <h5 class="card-title">Summer Top</h5>
+                              <p class="card-text">Casual style<br><strong>Price: #7,000</strong></p>
+                              <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
+                            </div>
+                          </div>
+                      </div>
 
-              <div class="card" style="width: 18rem;">
-                <img src="img/a632cb6c634f71fc06c28c4526e5966f.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">SUMMER TOPS</h5>
-                  <p class="card-text">DESCRITOM:shruh with bell sleeves <br>PRICE:7,000</p>
-                  <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-              </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3">
+                          <div class="card product-card">
+                            <img src="img/3957c0334f76937233156f4e9a170baf.jpg" class="card-img-top" alt="top4">
+                            <div class="card-body">
+                              <h5 class="card-title">Summer Top</h5>
+                              <p class="card-text">Classic knit<br><strong>Price: #7,000</strong></p>
+                              <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
+                            </div>
+                          </div>
+                      </div>
 
+                  </div>
+              </section>
 
-              <div class="card" style="width: 18rem;">
-                <img src="img/1000274843.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">SUMMER TOPS</h5>
-                  <p class="card-text">DESCRITOM:shruh with bell sleeves <br>PRICE:7,000</p>
-                  <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="img/3957c0334f76937233156f4e9a170baf.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">SUMMER TOPS</h5>
-                  <p class="card-text">DESCRITOM:shruh with bell sleeves <br>PRICE:7,000</p>
-                  <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="img/1000315525.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">SUMMER TOPS</h5>
-                  <p class="card-text">DESCRITOM:shruh with bell sleeves <br>PRICE:7,000</p>
-                  <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-              </div>
-
-
-
-           </div>
-
+          </div>
       </div>
 
       <footer>
@@ -166,7 +166,7 @@
       
             
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>        
-    
+ <script src="profile.js"></script>
 
 </body>
 </html>
